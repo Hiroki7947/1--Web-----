@@ -1,0 +1,212 @@
+    body {
+        margin: 0;
+    }
+    
+    header {
+        background: url(image/ヘッダーデザイン.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    header .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 2rem;
+
+    }
+    
+    header div {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        padding: 10px;
+        margin-right: 2rem;
+    }
+
+    header div h1{
+        font-size: 3.5rem;
+        color: #fff;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-family: "Hina Mincho", serif;
+        font-weight: 400;
+        font-style: normal;
+    }    
+    header div .nav {
+        text-decoration: none;
+        color: #ece9e9;
+        font-weight: bold;
+        margin-right: 5.5vw;
+        font-size: 1.5rem;
+        font-family: "Hina Mincho", serif;
+    }
+    header .intro{
+        position: absolute;
+        display: block;
+        top: 30%;
+        left: 50%;
+    }
+    header .intro h1 {
+        font-size: 3.6rem;
+        color: #8e8e8e;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-family: "Hina Mincho", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    header .intro p {
+        font-size: 2rem;
+        color: #d3d3d3;
+        text-align: left;
+        margin-bottom: 1rem;
+        font-family: "Hina Mincho", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    header .flex a:hover {
+        color: #717273;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+    }
+
+    header .intro h1:hover {
+        transition: all 0.3s ease-in-out;
+        color: #717273;
+    }
+
+    /*学習項目セクション*/
+
+    main section.studying{
+        background: url(image/メイン画像.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        width: 100%;
+    }
+    main section.studying h1{
+        text-align: center;
+        font-size: 3rem;
+        color: #fff;
+        padding-top: 10px;
+        margin-top: 0;
+        font-family: "Hina Mincho", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    main section.studying p {
+        text-align: left;
+        font-size: 2.0rem;
+        color: #ece9e9;
+        padding-left: 80px;
+        padding-right: 80px;
+        font-family: "Hina Mincho", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+    main section.studying .grid {
+        background-position: center;
+        position: relative;
+        position: absolute;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    main section.studying .grid .subject {
+        margin: auto;
+        padding: 100px 100px;
+        background-color: #ece9e9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    @media(max-width: 800px) {
+        header .flex {
+            flex-direction: column;
+            align-items: center;
+        }
+        header div h1 {
+            font-size: 2.5rem;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        header .flex div {
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            justify-content: center;
+        }
+        header .flex div .nav {
+            justify-content: center;
+            font-size: 1rem;
+        }
+        header .intro {
+            left: auto;
+            right: auto;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 1.5rem;
+        }
+        header .intro h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        header .intro p {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: left;
+            font-size: 1rem;
+        }
+    }
+
+    @media(max-width: 400px) {
+        header {
+            padding-top: 50px;
+        }
+       header .flex {
+            flex-direction: column;
+        }
+        header div h1 {
+            font-size: 2.5rem;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        header .flex  div{
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            justify-content: center;
+        }
+        header .flex  div .nav {
+            justify-content: center;
+            font-size: 0.7rem;
+        }
+        header .intro  {
+            left: auto;
+            right: auto;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5rem;
+        }
+        header .intro h1 {
+            padding-top: 50px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        header .intro p {
+            text-align: left;
+            font-size: 1rem;
+        }
+    }
