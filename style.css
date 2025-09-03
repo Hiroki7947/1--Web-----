@@ -54,7 +54,7 @@ html{
         top: 30%;
         left: 50%;
         max-width: 100%;
-        margin: 20px auto auto auto;
+        margin: 50px auto auto auto;
         padding: 10px;
         margin-right: 2rem;
     }
@@ -131,7 +131,7 @@ html{
         gap: 30px;
         padding: 20px 0 20px 10vw;
         width: 100vw;
-        box-sizing: border-box;
+        
     
     }
     main section#studying .grid .subject {
@@ -285,14 +285,16 @@ html{
     }
 
     @media(max-width: 400px) {
+
         header {
             padding-top: 50px;
         }
        header .flex {
             flex-direction: column;
         }
-        header div h1 {
+        header .flex h1 {
             font-size: 2.5rem;
+            padding-top: 0;
             margin-left: 0;
             margin-right: 0;
         }
@@ -313,12 +315,12 @@ html{
             margin-right: auto;
         }
         header .intro h1 {
-            padding-top: 50px;
+            padding-top: 0px;
             text-align: center;
-            font-size: 1rem;
+            font-size: 2rem;
         }
         header .intro p {
             text-align: left;
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
     }
