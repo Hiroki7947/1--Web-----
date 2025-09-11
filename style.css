@@ -170,7 +170,7 @@ main section.content .grid {
         background: #ece9e9;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        padding: 40px 10px;
+        padding: 80px;
         font-size: 2rem;
         text-align: center;
         
@@ -202,6 +202,63 @@ main section.content .grid {
         background-size: cover;
         background-position: center;
     }
+
+/*学習科目セクションのカード */
+main section#studying .grid {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+main section#studying .grid .subject {
+    min-width: clamp(180px, 30vw, 300px);
+    max-width: 90vw;
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+/* クリエイターセクションのカード */
+main section#creator .grid {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+main section#creator .grid .subject {
+    min-width: clamp(150px, 25vw, 250px);
+    max-width: 90vw;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+/* プロフィールセクションのカード */
+main section#profile .grid {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+main section#profile .grid .subject {
+    min-width: clamp(120px, 20vw, 200px);
+    max-width: 90vw;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+}
 
 /*パソコンの半分設定用*/
     @media(max-width: 800px) {
